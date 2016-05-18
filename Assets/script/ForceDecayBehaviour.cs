@@ -8,7 +8,7 @@ public class ForceDecayBehaviour : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
@@ -20,7 +20,7 @@ public class ForceDecayBehaviour : MonoBehaviour {
 			Vector2 touchPos = new Vector2(wp.x, wp.y);
 			if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPos))
 			{
-				debug.text = "Touched";
+				debug.text = GetInstanceID().ToString();
 
 			}
 		}
