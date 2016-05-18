@@ -28,7 +28,7 @@ public class ForceDecayBehaviour : MonoBehaviour {
 			for (int i = 0; i < nbTouches; i++) {
 				Touch touch = Input.GetTouch(i);
 				TouchPhase phase = touch.phase;
-				Vector3 wp = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+				Vector3 wp = Camera.main.ScreenToWorldPoint(touch.position);
 				Vector2 touchPos = new Vector2(wp.x, wp.y);
 				if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPos))
 				{		
