@@ -46,7 +46,7 @@ public class ForceDecayBehaviour : MonoBehaviour {
 						// Check if the force has been applied so that it can only fire once
 						if (!appliedForce) {
 							// Apply force using the touch direction.
-							itemRigidBody.AddForce (touchDirection * 500);
+							itemRigidBody.AddForce (touchDirection * 50);
 							// Apply a small force decay per frame
 							itemRigidBody.drag += 0.01f;
 							// Display what object was touched
